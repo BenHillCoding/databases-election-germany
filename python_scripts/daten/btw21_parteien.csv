@@ -1,0 +1,250 @@
+﻿Gruppenschluessel;Gruppenart_XML;Gruppenart_CSV;GruppennameKurz;Gruppenname
+100;SYSTEM_GRUPPE;System-Gruppe;Wahlberechtigte;Wahlberechtigte
+200;SYSTEM_GRUPPE;System-Gruppe;Wählende;Wählende
+300;SYSTEM_GRUPPE;System-Gruppe;Ungültige;Ungültige Stimmen
+400;SYSTEM_GRUPPE;System-Gruppe;Gültige;Gültige Stimmen
+2;PARTEI;Partei;CDU;Christlich Demokratische Union Deutschlands
+1;PARTEI;Partei;SPD;Sozialdemokratische Partei Deutschlands
+35;PARTEI;Partei;AfD;Alternative für Deutschland
+4;PARTEI;Partei;FDP;Freie Demokratische Partei
+34;PARTEI;Partei;Die Linke;DIE LINKE
+5;PARTEI;Partei;GRÜNE;BÜNDNIS 90/DIE GRÜNEN
+3;PARTEI;Partei;CSU;Christlich-Soziale Union in Bayern e.V.
+45;PARTEI;Partei;FREIE WÄHLER;FREIE WÄHLER
+37;PARTEI;Partei;Die PARTEI;Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative
+9;PARTEI;Partei;Tierschutzpartei;PARTEI MENSCH UMWELT TIERSCHUTZ
+21;PARTEI;Partei;NPD;Nationaldemokratische Partei Deutschlands
+8;PARTEI;Partei;PIRATEN;Piratenpartei Deutschland
+22;PARTEI;Partei;ÖDP;Ökologisch-Demokratische Partei
+20;PARTEI;Partei;V-Partei³;V-Partei³ - Partei für Veränderung, Vegetarier und Veganer
+24;PARTEI;Partei;DiB;DEMOKRATIE IN BEWEGUNG
+18;PARTEI;Partei;BP;Bayernpartei
+10;PARTEI;Partei;Tierschutzallianz;Allianz für Menschenrechte, Tier- und Naturschutz
+17;PARTEI;Partei;MLPD;Marxistisch-Leninistische Partei Deutschlands
+33;PARTEI;Partei;Gesundheitsforschung;Partei für Gesundheitsforschung
+27;PARTEI;Partei;MENSCHLICHE WELT;Menschliche Welt - für das Wohl und Glücklichsein aller
+11;PARTEI;Partei;DKP;Deutsche Kommunistische Partei
+43;PARTEI;Partei;Die Grauen;Die Grauen – Für alle Generationen
+12;PARTEI;Partei;BüSo;Bürgerrechtsbewegung Solidarität
+44;PARTEI;Partei;Die Humanisten;Partei der Humanisten
+19;PARTEI;Partei;Gartenpartei;Gartenpartei
+42;PARTEI;Partei;du.;Die Urbane. Eine HipHop Partei
+15;PARTEI;Partei;SGP;Sozialistische Gleichheitspartei, Vierte Internationale
+63;PARTEI;Partei;dieBasis;Basisdemokratische Partei Deutschland
+32;PARTEI;Partei;Bündnis C;Bündnis C - Christen für Deutschland
+69;PARTEI;Partei;BÜRGERBEWEGUNG;Bürgerbewegung für Fortschritt und Wandel
+52;PARTEI;Partei;III. Weg;DER DRITTE WEG
+65;PARTEI;Partei;BÜNDNIS21;diePinken/BÜNDNIS21
+60;PARTEI;Partei;LIEBE;Europäische Partei LIEBE
+66;PARTEI;Partei;LKR;Liberal-Konservative Reformer
+84;PARTEI;Partei;PdF;Partei des Fortschritts
+68;PARTEI;Partei;LfK;>> Partei für Kinder, Jugendliche und Familien <<  – Lobbyisten für Kinder –
+59;PARTEI;Partei;SSW;Südschleswigscher Wählerverband
+64;PARTEI;Partei;Team Todenhöfer;Team Todenhöfer – Die Gerechtigkeitspartei
+16;PARTEI;Partei;UNABHÄNGIGE;UNABHÄNGIGE für bürgernahe Demokratie
+57;PARTEI;Partei;Volt;Volt Deutschland
+40;PARTEI;Partei;Volksabstimmung;Ab jetzt...Demokratie durch Volksabstimmung - Politik für die Menschen
+26;PARTEI;Partei;B*;bergpartei, die überpartei - ökoanarchistisch-realdadaistisches sammelbecken
+71;PARTEI;Partei;sonstige;DIE SONSTIGEN - X
+31;PARTEI;Partei;FAMILIE;Familien-Partei Deutschlands
+72;PARTEI;Partei;Graue Panther;Graue Panther
+73;PARTEI;Partei;KlimalisteBW;Klimaliste Baden-Württemberg
+76;PARTEI;Partei;THP;Thüringer Heimatpartei
+553;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Böving;ADONIS
+664;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kunstmann;AKB
+602;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hemm;Aktion Bürger für Gerechtigkeit
+512;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Dorn;Aktion Bürger für Gerechtigkeit
+649;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kolb;Aktion Bürger für Gerechtigkeit
+588;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Martinschledde;Alle in EU
+530;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Jagau;Andere Perspektiven
+632;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kalupner;Angela and I are here to create ...
+568;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Podjaski;Artgerecht
+515;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Asmus;ASMUSfddB
+534;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Oschkinat;AufrechterDemokrat
+548;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hackel;AusUnsrerMitte
+510;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Sonnabend;Bedingungsloses Grundeinkommen
+509;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Nebeler;Bernd Nebeler
+610;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bibiella;BibiellaBTW
+540;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Rosenbaum;BIBS
+536;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bilo;Bilo - für Mülheim nach Berlin
+672;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Gabler;Bobby
+641;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Brähmig;Brähmig
+660;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Brehm;BRD braucht Brehm
+508;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hitzer;Bürger bewirbt sich als freier Direktkandidat
+658;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wetklo;Bürgerstimme
+654;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schlossbauer;CSB Carsten Schlossbauer
+668;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Richter;Daniel Richter
+511;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Gibanica;David Gibanica
+638;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Roensch;Deas
+642;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Demir;Demir
+681;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wolter;DEMOKRATIE FAIR UND DIREKT
+647;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Commentz;Demokratie verteidigen
+616;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Dönmez;Deutschland ist Önders
+541;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Fritsch;Die Zukunft am Start
+694;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Voß;Direkt – bürgerschaftlich – unabhängig
+547;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Zimmet;Direktkandidat Daniel Zimmet
+607;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hannig;Direktkandidat Frank Hannig
+600;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kaun;Direktkandidat Ralf Kaun
+673;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schöllner;DK Schöllner
+653;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Gust;DUD
+659;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Opfer;DU1
+626;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Zimmermann;EB Zimmermann
+622;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Sirin;Ediz Sirin
+629;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kramer;Ehrensache
+611;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Glamann;ehrliche Politik / Transparenz
+661;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Roloff;EINFACH MACHEN
+531;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Härtlein;Ein Leipziger für Leipzig
+563;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Englisch;Einzelbewerber Englisch
+675;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Rohne;Einzelbewerber Rohne
+543;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Gums;Einzelbewerber Rüdiger Gums Parteilos
+569;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wieczorek;Einzelbewerber Wieczorek
+585;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schlüter;Einzelkandidat Schlüter
+518;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Eppel;Eppel
+684;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Ergin;Ergin
+692;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Pape;erneuerung-klima.de
+535;EINZELBEWERBER;Einzelbewerber/Wählergruppe;#KLIMAfirst;Erststimme fürs Klima
+555;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hofmann;Eure Stimme von Morgen
+549;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kaiser;Freiheit jetzt! - Michael Kaiser
+645;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Miller;FRiDi - unabhängig - unbestechlich - ehrlich - bürgernah
+528;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Neumann;Frieden
+695;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wendt;FriGGa Wendt, Grundeinkommen-für-alle.org
+635;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Janowski;Für die Altmark nach Berlin
+559;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Conrad;für mehr Bürgerbeteiligung
+524;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Berger;Gebhard Berger
+587;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Grammbitter;Gemeinsam sind Wir MehrWert!
+677;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Buro;Gesicht zeigen
+574;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Goldbeck;Goldi
+620;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Mund;Heidi Mund
+567;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Müller;Ihre parteilose Direktstimme im Bundestag für Mitbestimmung
+562;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Herbert;Internationalistische Liste
+618;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Harting;Internationalistische Liste
+628;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Göller;Internationalistische Liste
+604;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Meister;Internationalistische Liste
+627;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Rapps;Internationalistische Liste
+631;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Baydar;Internationalistische Liste
+539;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Dumberger;Internationalistische Liste
+621;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Barth;Internationalistische Liste
+655;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Zajonc;Internationalistisches Bündnis
+663;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schäuble-Leopold;Internationalistisches Bündnis
+523;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Lenz;Internationalistisches Bündnis
+501;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Stein;Internationalistisches Bündnis
+597;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Krajak;Internationalistisches Bündnis
+625;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schmidt;Internationalistisches Bündnis
+525;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schwang;Internationalistisches Bündnis
+507;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Grütte;Internationalistisches Bündnis
+592;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kunick;Internationalistisches Bündnis
+614;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kober;Internationalistisches Bündnis
+640;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Janda;Internationalistisches Bündnis
+637;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Meyer;Internationalistisches Bündnis
+594;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schmidt;Internationalistisches Bündnis
+608;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Blickle;Internationalistisches Bündnis
+651;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Herrlinger;Internationalistisches Bündnis
+578;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bartholomé;Internationalistisches Bündnis
+502;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Weidemann;Internationalistisches Bündnis
+634;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schlüter;Internationalistisches Bündnis
+577;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Herzig;Internationalistisches Bündnis
+599;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Balzer;Internationalistisches Bündnis
+670;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Deutsch;Internationalistisches-Bündnis
+571;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Marinello;Internationalistisches Bündnis
+513;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kunick;Internationalistisches Bündnis
+609;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Georgiou;Internationalistisches Bündnis
+570;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Großkopf;Internationalistisches Bündnis
+572;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Gerisch;Ischgl
+526;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Richter;Jugend-Narrativ
+657;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hummitzsch;KARLKOMMT
+554;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bauer;Keine CO2-Steuer. WIEDERHERSTELLUNG unserer Grundrechte!
+551;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kerkhoff;Kerkhoff
+679;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Baumanns;KLIMAgerechtigkeitsLISTE
+598;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Blum;Klimaliste
+552;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Mobasheri;Klimaliste
+636;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Pohl;Klimaliste
+683;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Henig;Klimaliste
+522;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Vollmer;Klimaliste
+517;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Sayn;Klimaliste
+595;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hoppe;Klimaliste
+575;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hofmann;Klimaliste
+538;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wittner;Klimaliste
+565;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schöne;Klimaliste
+550;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Seiffert;Klimaliste
+581;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Stachowiak;Klimaliste Darmstadt-Dieburg
+624;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Mandel;Klimaliste für Collective Care und Inklusion
+593;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wiesenthal;Klimaschutz
+557;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Lauer;Lauer, Marius Wolfgang
+652;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Lenz;LENZ
+650;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Löhnert;MACH
+606;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Friedl;Malkampf für das Klima
+596;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Manz;Manz
+685;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Carstensen;Marburger Pogo-Anarchisten
+646;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Fuchs;Marcus Fuchs - Querdenken 351
+613;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bieling;Marko Bieling
+633;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Erdmann;Markus Erdmann - Klimaliste
+576;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Mascher;Mascher
+639;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Sommerfeldt;Mehr Vernunft
+690;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Lindlmair;Mieterinitiativen
+564;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Heil;Mit Sachverstand die Zukunft gestalten
+582;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Geselbracht;Münsterliste - bunt und international e.V.
+584;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Klement;Neue Wege
+665;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Novotny;Nicht Ich. Wir.
+619;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Tolzin;Nie wieder sinnlose Lockdowns!
+666;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Janoske-Kizildag;ODIN
+648;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hönig;OpaBraveheart
+662;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Klimczak;Paletten
+503;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Löwe;parteienunabhängig
+667;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Ryssel;Parteifreier Direktkandidat WK 226
+532;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Dippel;#parteifrei #Gemeinsam gewinnen! #Gemeinsam verändern! Einfach mal anders: Erststimme Dippel!
+693;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Snelinski;Parteifrei in den Bundestag
+691;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Moser;Parteifrei, unabhängig und transparent. Für eine direktere Demokratie ohne Fraktionszwang und eine Amtszeitbeschränkung.
+586;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Charnow;Parteilos
+560;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Lorenz;Parteilos
+669;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Koccu;Parteilos
+566;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Moritz;Parteilos Dr. Moritz
+615;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Marquardt;parteilose Direktkandidatin Marquardt
+516;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schlippenbach;PARTEILOS - FÜR MEHR DIREKTE DEMOKRATIE
+579;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Peiler;Peiler
+617;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Pettenkofer;Pettenkofer
+500;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bechtel;Politik durch Bodenständigkeit und Bürgerbeteiligung
+542;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Klopstock;Politisch mitwirken für alle
+644;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Poss;Poss4SB
+656;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schlot;Prof. Dr. med. Udo Schlot
+612;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Queck;QUECK
+580;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Rehbein;REHBEIN
+630;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Reichel;REICHEL
+601;EINZELBEWERBER;Einzelbewerber/Wählergruppe;ÖLDP;RESIST! FRIEDLICHE ÖKOLINKSLIBERALE DEMOKRATISCHE REVOLUTION. FREIHEITEN, DEMOKRATIE, WOHLSTAND, GESUNDHEIT FÜR ALLE! BULTHEEL WÄHLEN!
+520;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Röhder;Röhder
+676;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Saygili;Saygili
+529;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schmitt;Schmitt Wiesloch
+678;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Przybylski;Seelenwärmer
+643;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Krüger;Sören Krüger
+504;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kaldewei;Stimme für Freiheitlichkeit, Bürgerlichkeit und menschliche Identität
+505;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Knott;Stimme gegen Fraktionszwang
+686;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Vogler;Südpfalz - stellt Fragen!
+591;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Teßmann;Teßmann
+605;EINZELBEWERBER;Einzelbewerber/Wählergruppe;TNT;Transparent, Nah am Bürger, Treu den Wählern
+556;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Gradl;Unabhängiger Direktkandidat / Nikolaus Gradl
+583;EINZELBEWERBER;Einzelbewerber/Wählergruppe;#TeamFranka;Unabhängig! Für Dich. Für Uns. Für Alle.
+544;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Herrmann;Unabhängig und FREI
+671;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Wassenaar;UN-Menschenrecht auf Frieden
+623;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Häupl;UNO - Menschenrecht - FRIEDEN für Alle
+545;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schürer;Unparteilich
+519;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Trojanowski;Unsere Zukunftsperspektive für Digitalisierung, Bildung und Umwelt
+603;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hilz;Vereinigte Direktkandidaten
+687;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Langhans;Vereinigte Direktkandidaten
+533;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Ressdorf;Volk ins Parlament - VIP
+589;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Ringger;Wadenbeißer
+527;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Krämer;Wahlrechtsreform
+674;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Weich;Weich - parteilos
+590;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hartmann;Werner Hartmann
+546;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Müller;Wir - alle gemeinsam
+680;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Tropp;Wir! Gemeinsam stark
+558;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: El-Fayoumy;Wir haben eine Welt zu verlieren
+561;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Eckelmann;Wirklich besser regieren, für unser Land und für unsere Zukunft.
+506;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Kohl;WIR sind LEIPZIGER
+521;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Schütz;Wirtschaftlich-Ökologisch-Familienfreundlich
+573;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Engels;Wotan Engels
+689;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Fielsch;www.weltrettung-durch-therapie.de
+682;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bayer;www.zeitkaufhaus.de Martin Bayer
+696;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Zebian;Zebian, Ayman
+514;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Lembach;Zeitgemäße Demokratie mit Politik auf Augenhöhe
+688;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Bunte;Zeit zählt!
+537;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB: Hinners;ZUKUNFT
+28;UEBRIGE;System-Gruppe;Übrige;Übrige

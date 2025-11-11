@@ -1,0 +1,97 @@
+﻿Gruppenschluessel;Gruppenart_XML;Gruppenart_CSV;GruppennameKurz;Gruppenname
+100;SYSTEM_GRUPPE;System-Gruppe;Wahlberechtigte;Wahlberechtigte
+200;SYSTEM_GRUPPE;System-Gruppe;Wählende;Wählende
+300;SYSTEM_GRUPPE;System-Gruppe;Ungültige;Ungültige Stimmen
+400;SYSTEM_GRUPPE;System-Gruppe;Gültige;Gültige Stimmen
+2;PARTEI;Partei;SPD;Sozialdemokratische Partei Deutschlands
+1;PARTEI;Partei;CDU;Christlich Demokratische Union Deutschlands
+3;PARTEI;Partei;GRÜNE;BÜNDNIS 90/DIE GRÜNEN
+7;PARTEI;Partei;FDP;Freie Demokratische Partei
+5;PARTEI;Partei;AfD;Alternative für Deutschland
+6;PARTEI;Partei;CSU;Christlich-Soziale Union in Bayern e.V.
+4;PARTEI;Partei;Die Linke;Die Linke
+8;PARTEI;Partei;FREIE WÄHLER;FREIE WÄHLER
+10;PARTEI;Partei;Tierschutzpartei;PARTEI MENSCH UMWELT TIERSCHUTZ
+63;PARTEI;Partei;dieBasis;Basisdemokratische Partei Deutschland
+14;PARTEI;Partei;Die PARTEI;Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative
+53;PARTEI;Partei;Team Todenhöfer;Die Gerechtigkeitspartei – Team Todenhöfer
+9;PARTEI;Partei;PIRATEN;Piratenpartei Deutschland
+44;PARTEI;Partei;Volt;Volt Deutschland
+13;PARTEI;Partei;ÖDP;Ökologisch-Demokratische Partei - Die Naturschutzpartei
+59;PARTEI;Partei;SSW;Südschleswigscher Wählerverband
+41;PARTEI;Partei;Verjüngungsforschung;Partei für Verjüngungsforschung
+45;PARTEI;Partei;PdH;Partei der Humanisten - Fakten, Freiheit, Fortschritt
+58;PARTEI;Partei;Bündnis C;Bündnis C - Christen für Deutschland
+18;PARTEI;Partei;BP;Bayernpartei
+23;PARTEI;Partei;MLPD;Marxistisch-Leninistische Partei Deutschlands
+46;PARTEI;Partei;MENSCHLICHE WELT;Menschliche Welt - für das Wohl und Glücklichsein aller
+67;PARTEI;Partei;PdF;Partei des Fortschritts
+25;PARTEI;Partei;SGP;Sozialistische Gleichheitspartei, Vierte Internationale
+17;PARTEI;Partei;BüSo;Bürgerrechtsbewegung Solidarität
+72;PARTEI;Partei;BÜNDNIS DEUTSCHLAND;BÜNDNIS DEUTSCHLAND
+64;PARTEI;Partei;BSW;Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit
+51;PARTEI;Partei;MERA25;MERA25 - Gemeinsam für Europäische Unabhängigkeit
+83;PARTEI;Partei;WerteUnion;WerteUnion
+554;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Pape;abgeordnetenwatch.de/profile/christian-pape
+592;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Martinschledde;Alle in EU
+578;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Papst;Andreas Papst
+573;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Baasch;Baasch, Björn
+599;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Wendt;Bedingungsloses-Grundeinkommen-als-Menschenrecht.de
+561;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Jäger;Benjamin Jäger
+525;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Winter;Bündnis BERNHARD WINTER: Erfahren. Anders. Ja
+532;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Dorn;Bürger für Gerechtigkeit
+519;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Krämer;BUNDESTAGVERKLEINERUNG
+523;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Dröse;Danilo Dröse
+571;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Wolter;DEMOKRATIE Verantwortung und Gerechtigkeit
+546;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Link;Dialog statt Aufrüstung
+539;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Müller;Direkte Demokratie und NATO-Austritt
+510;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Meyer;DUW - Stimme für VOLKSENTSCHEIDE
+505;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Bellgardt;Einzelbewerber Bellgardt
+564;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Gliese;Einzelbewerber Gliese
+544;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Sanftleben;Einzelbewerber Matthias Sanftleben
+540;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Krüger;Einzelwahlvorschlag Krüger
+574;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Emre;EMRE
+511;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Nietfeld;Erststimme gegen Korruption
+570;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Hartwig;"Es darf kein ""Weiter so"" geben!"
+515;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Miller;FRiDi - unabhängig - unbestechlich - ehrlich - bürgernah
+548;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Thomas;Für eine Welt ohne Grenzen, Krieg und Ausbeutung!
+587;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Hahn;für Reinhardsbrunn
+522;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Busse;Ganz unten
+543;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Kisifli;GANZUNTEN
+553;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Gaisenkersting;Gegen Kapitalismus und Krieg! Stoppt den Genozid in Gaza!
+558;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Mauer;Gegen Kapitalismus und Krieg! Stoppt den Genozid in Gaza!
+555;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Hösch;Ideenschmiede Rheinhessen
+533;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Otterbach;Initiative Gegenwind
+507;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Hamid;Integrität und Gerechtigkeit für ein starkes Deutschland
+542;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Kersten;Jens Kersten
+531;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Reitz;Jürgen Reitz Unabhängige Wählergemeinschaft Marburg-Biedenkopf
+500;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Bachmann;Julia Bachmann
+598;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Heider;Klasse Gegen Klasse / Revolutionäre Internationalistische Organisation
+589;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Lieb;Klasse Gegen Klasse / Revolutionäre Internationalistische Organisation
+581;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Wächter;Marburger Pogo-Anarchisten
+547;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Hönig;OpaBraveheart
+583;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Manske;parteilos
+556;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Weißer;Parteilos
+550;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Wenz;parteilos1968
+568;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Schubert;RobbySchubert
+514;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Farle;Robert Farle
+572;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Pradel;Stimme für Thüringen
+501;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Krüger-Winands;Stimme für VOLKSENTSCHEIDE
+509;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Schulte;Stimme für VOLKSENTSCHEIDE
+527;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Schultz;Stimme für VOLKSENTSCHEIDE
+512;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Turck;Stimme für VOLKSENTSCHEIDE
+559;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Zibi;Stimme für VOLKSENTSCHEIDE
+557;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Stöber;STÖBER
+517;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Horn;Team Orange
+585;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Knauer;Tim Knauer
+566;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Przybylski;Tradition und Zukunft
+524;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Michalsky;Ulf Michalsky
+562;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Dippel;Verantwortung für Frieden - Gesundheit - Gerechtigkeit +++ liegt in unserer Hand! Danke für Ihr Vertrauen!
+591;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Treppe;Vereinigte Direktkandidaten
+504;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Füllmich;Versöhnen an Stelle von spalten - Reiner Füllmich
+563;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Raidt;Volkmar Raidt
+502;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Kohle;Volksbegehren
+567;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Sollwedel;Wahlbündnis Move35 / 50 % Pkw-Reduzierung JETZT !
+521;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Demir;WIR SIND ZUSAMMEN STARK (WSZ)
+516;EINZELBEWERBER;Einzelbewerber/Wählergruppe;EB:Neurauter;Zusammen machen wir Deutschland herzlicher!
+28;UEBRIGE;System-Gruppe;Übrige;Übrige
