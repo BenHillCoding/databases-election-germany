@@ -34,7 +34,6 @@ def main():
                 file_path = os.path.join(root, filename)
                 replace_in_csv(file_path, "GruppennameKurz", NEW_KUERZEL_LIST)
                 replace_in_csv(file_path, "Gruppenname", NEW_GRUPPENNAME_LIST)
-                print(f"Updated {file_path}")
     print("Update abgeschlossen")
 
 if __name__ == "__main__":
