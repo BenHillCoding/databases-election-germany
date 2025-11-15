@@ -2,7 +2,7 @@ import os
 import csv
 
 # Define replacements
-NEW_KUERZEL_LIST = [["GRÜNE/B 90", "GRÜNE"], ["DIE LINKE", "Die Linke"]]
+NEW_KUERZEL_LIST = [["GRÜNE/B 90", "GRÜNE"], ["DIE LINKE", "Die Linke"], ["Die Humanisten", "PdH"], ["Gesundheitsforschung", "Verjüngungsforschung"]]
 NEW_GRUPPENNAME_LIST = []
 
 # Directory containing CSV files
@@ -34,7 +34,7 @@ def main():
                 file_path = os.path.join(root, filename)
                 replace_in_csv(file_path, "GruppennameKurz", NEW_KUERZEL_LIST)
                 replace_in_csv(file_path, "Gruppenname", NEW_GRUPPENNAME_LIST)
-    print("Update abgeschlossen")
+    print("File-Update abgeschlossen")
 
 if __name__ == "__main__":
     main()

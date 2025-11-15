@@ -32,7 +32,7 @@ def drop_all_tables(cur):
     ]
     for t in tables:
         cur.execute(f"DROP TABLE IF EXISTS {t} CASCADE;")
-    print("✅ Dropped all existing tables.")
+    print("Drop-Tables abgeschlossen.")
 
 def create_core_schema(cur):
     # Partei
@@ -134,7 +134,8 @@ def create_core_schema(cur):
             id SERIAL PRIMARY KEY,
             wahlkreisergebnis_id INT,
             gueltig BOOLEAN,
-            direktkandidatur_id INT
+            direktkandidatur_id INT,
+            anzahl INT
         )
     """)
 
@@ -144,7 +145,8 @@ def create_core_schema(cur):
             id SERIAL PRIMARY KEY,
             wahlkreisergebnis_id INT,
             gueltig BOOLEAN,
-            partei_id INT
+            partei_id INT,
+            anzahl INT
         )
     """)
 
@@ -155,7 +157,7 @@ def main():
             drop_all_tables(cur)
             create_core_schema(cur)
         conn.commit()
-        print("Schema dropped and recreated successfully.")
+        print("Schema-Erstellung abgeschlossen.")
     except Exception as e:
         conn.rollback()
         print(f"Error creating schema: {e}")
