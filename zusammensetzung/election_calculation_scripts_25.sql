@@ -1,7 +1,7 @@
 -- German 2025 Federal Election Seat Allocation using Views
 -- Based on Sainte-Laguë/Schepers method (630 seats, no leveling seats)
 
--- VIEW 1: Aggregate second votes (Zweitstimmen) per party nationally
+-- VIEW 1: Aggregate second votes (Zweitstimmen) per party nationally. Result: partei_id, partei_name. number of votes nation wide, share of votes nation wide
 CREATE OR REPLACE VIEW v_national_votes AS
 SELECT
   p.id as partei_id,
@@ -14,7 +14,7 @@ JOIN wahlkreisergebnis we ON we.id = z.wahlkreisergebnis_id
 WHERE z.gueltig = true AND we.wahl_id = 21
 GROUP BY p.id, p.name;
 
--- VIEW 2: Count direct mandates per party nationally
+-- VIEW 2: Count direct mandates per party nationally. Result: partei_id, partei_name, number of direktkandidaturen for this partei nation wide
 CREATE OR REPLACE VIEW v_national_direct_mandates AS
 SELECT
   p.id as partei_id,
@@ -25,21 +25,19 @@ JOIN partei p ON dk.partei_id = p.id
 WHERE dk.wahl_id = 21
 GROUP BY p.id, p.name;
 
--- View 2.5: Calculate how many wahlkreise each party won erstimmen wise
+-- View 3: Calculate how many wahlkreise each party won erstimmen wise. Result: partei_id, number of won direktmandate
 CREATE OR REPLACE VIEW v_partei_wahlkreisgewinne AS
 WITH stimmen_pro_kandidat AS (
     SELECT
         e.wahlkreisergebnis_id,
         dk.id AS direktkandidatur_id,
         dk.partei_id,
-        wk.id AS wahlkreis_id,
         count(e.id) AS stimmen
     FROM erststimme e
     JOIN direktkandidatur dk ON e.direktkandidatur_id = dk.id
-    JOIN wahlkreis wk ON dk.wahlkreis_id = wk.id
 	  JOIN wahlkreisergebnis wke ON wke.id = e.wahlkreisergebnis_id
     WHERE e.gueltig = true AND wke.wahl_id = 21
-    GROUP BY e.wahlkreisergebnis_id, dk.id, dk.partei_id, wk.id
+    GROUP BY e.wahlkreisergebnis_id, dk.id, dk.partei_id
 ),
 rangliste AS (
     SELECT
@@ -55,8 +53,9 @@ WHERE rang = 1
 GROUP BY partei_id
 ORDER BY gewonnene_wahlkreise DESC;
 
--- VIEW 3: Determine qualifying parties
--- Parties qualify if: vote_share >= 5% OR are recognized minority parties (e.g., SSW)
+
+-- VIEW 4: Determine qualifying parties: Result: partei_id, partei_name, total votes nation wide for this party, share of votes nation wide for this party, number of tried direktkandidaturen, boolean for national minority
+-- Parties qualify if: vote_share >= 5% OR are recognized minority parties (e.g., SSW) OR at least 3 direktmandate
 CREATE OR REPLACE VIEW v_qualifying_parties AS
 SELECT
   nv.partei_id,
@@ -73,7 +72,7 @@ WHERE nv.vote_share_percent >= 5.0
    OR p.nationale_minderheit = true
    OR COALESCE(wkg.gewonnene_wahlkreise, 0) >= 3;
 
--- VIEW 4: Aggregate second votes per party and Bundesland
+-- VIEW 5: Aggregate second votes per party and Bundesland. Result: partei_id, partei_name, bundesland_id, bundesland_name, number of zweitstimmen for this partei in this bundesland
 CREATE OR REPLACE VIEW v_party_bundesland_votes AS
 SELECT
   p.id as partei_id,
@@ -91,7 +90,7 @@ WHERE z.gueltig = true
   AND wr.wahl_id = 21
 GROUP BY p.id, p.name, b.id, b.name;
 
--- VIEW 5: Calculate direct mandates per party/Bundesland
+-- VIEW 6: Calculate direct mandates per party/Bundesland. Result: partei_id, partei_name, bundesland_id, bundesland_name, number of tried direktkandidaturen for this partei in this bundesland
 CREATE OR REPLACE VIEW v_direct_mandates AS
 SELECT
   p.id as partei_id,
@@ -106,7 +105,7 @@ JOIN bundesland b ON wk.bundesland_id = b.id
 WHERE dk.wahl_id = 21
 GROUP BY p.id, p.name, b.id, b.name;
 
--- VIEW 6: Calculate total valid second votes nationwide (for divisor calculation)
+-- VIEW 7: Calculate total valid second votes nationwide (for divisor calculation): Result: number of zweitstimmen that matter for the calculation of the divisor
 CREATE OR REPLACE VIEW v_total_second_votes AS
 SELECT COUNT(z.id) as total_votes
 FROM zweitstimme z
@@ -115,7 +114,7 @@ JOIN v_qualifying_parties qp
 JOIN wahlkreisergebnis we ON z.wahlkreisergebnis_id = we.id
 WHERE gueltig = true AND we.wahl_id = 21;
 
--- Create materialized view to cache divisor calculation
+-- Create materialized view to cache divisor calculation. Result: divisor, iteration in which divisor was found
 DROP MATERIALIZED VIEW IF EXISTS mv_saintelague_divisor CASCADE;
 
 CREATE MATERIALIZED VIEW mv_saintelague_divisor AS
@@ -155,7 +154,7 @@ final_result AS (
 SELECT divisor, iteration
 FROM final_result;
 
--- VIEW 7: STAGE 1 - National Sainte-Laguë allocation
+-- VIEW 8: STAGE 1 - National Sainte-Laguë allocation. Result: partei_id, partei_name, total number of zweitstimmen for this partei, share of zweitstimmen for this partei, unrounded seats for partei, rounded seats for partei
 -- Creates national seat allocation per party (not per bundesland)
 CREATE OR REPLACE VIEW v_national_seat_allocation AS
 SELECT
@@ -169,7 +168,7 @@ FROM v_national_votes nv
 WHERE nv.partei_id IN (SELECT partei_id FROM v_qualifying_parties)
 ORDER BY total_seats_allocated DESC;
 
--- STAGE 2: For each party, find iterative divisor for bundesland distribution
+-- STAGE 2: For each party, find iterative divisor for bundesland distribution. Result: partei_id, partei_name, national seats allocated for this party, divisor for partei and bundesland
 -- Each party gets its own iterative divisor search for bundesland distribution
 DROP MATERIALIZED VIEW IF EXISTS mv_party_bundesland_divisors CASCADE;
 
@@ -223,7 +222,7 @@ SELECT
 FROM v_national_seat_allocation nsa
 JOIN party_targets pt ON nsa.partei_id = pt.partei_id;
 
--- STAGE 2 Result: Bundesland distribution per party
+-- STAGE 2 Result: Bundesland distribution per party. Result: partei_id, partei_name, bundesland_id, bundesland_name, total zweitstimmen per partei and bundesland, nation wide seats number, seats for this bundesland
 CREATE OR REPLACE VIEW v_bundesland_seat_distribution AS
 SELECT
   pb.partei_id,
@@ -238,7 +237,7 @@ JOIN v_national_seat_allocation nsa ON pb.partei_id = nsa.partei_id
 JOIN mv_party_bundesland_divisors pbd ON pb.partei_id = pbd.partei_id
 ORDER BY pb.partei_id, seats_allocated DESC;
 
--- VIEW 7: Direct mandate coverage check (Zweitstimmendeckung)
+-- VIEW 8: Direct mandate coverage check (Zweitstimmendeckung). Result: partei_id, partei_name, bundesland_id, bundesland_name, number of seats actually won, number of direktkandidaturen won, number of eligible direktkandidaturen won, number of excluded won direktkandidaturen
 -- Now checks if direct mandate winners can get seats based on bundesland allocation
 CREATE OR REPLACE VIEW v_mandate_coverage AS
 SELECT
@@ -255,7 +254,7 @@ FULL OUTER JOIN v_direct_mandates dm
   ON bsd.partei_id = dm.partei_id
   AND bsd.bundesland_id = dm.bundesland_id;
 
--- VIEW 8: Final seat distribution (2025 method - no leveling seats)
+-- VIEW 9: Final seat distribution (2025 method - no leveling seats). Result: partei_id, partei_name, bundesland_id, bundesland_name, number of mandates awarded for this bundesland, seats from this bundesland for this party
 -- Returns final allocated seats per party and bundesland
 CREATE OR REPLACE VIEW v_final_seat_distribution AS
 SELECT
@@ -263,14 +262,13 @@ SELECT
   partei_name,
   bundesland_id,
   bundesland_name,
-  proportional_seats,
   mandates_awarded as direct_mandates,
   proportional_seats as total_seats
 FROM v_mandate_coverage
 WHERE proportional_seats > 0 OR mandates_awarded > 0
 ORDER BY partei_id, bundesland_id;
 
--- VIEW 9: Summary statistics
+-- VIEW 10: Summary statistics. Result: total number of seats, number of parties owning seats, number of bundesländer, number of qualifying parteien, number of valid zweitstimmen
 CREATE OR REPLACE VIEW v_allocation_summary AS
 SELECT
   (SELECT SUM(total_seats) FROM v_final_seat_distribution) as total_seats_distributed,
@@ -279,7 +277,7 @@ SELECT
   (SELECT COUNT(*) FROM v_qualifying_parties) as parties_qualifying,
   (SELECT total_votes FROM v_total_second_votes) as total_second_votes;
 
--- VIEW 10: National results summary
+-- VIEW 11: National results summary. Result: partei_id, partei_name, total votes for partei, share of votes for partei, nation wide seats for partei
 CREATE OR REPLACE VIEW v_national_summary AS
 SELECT
   qp.partei_id,
@@ -291,5 +289,3 @@ FROM v_qualifying_parties qp
 LEFT JOIN v_final_seat_distribution fsd ON qp.partei_id = fsd.partei_id
 GROUP BY qp.partei_id, qp.partei_name, qp.total_votes, qp.vote_share_percent
 ORDER BY total_seats_nationwide DESC;
-
-select * from v_national_summary;
