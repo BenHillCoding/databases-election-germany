@@ -49,6 +49,9 @@ def main():
         insert_parteien(cur, FILE_2025)
         insert_parteien(cur, FILE_2021)
 
+    # SSW nationale Minderheit
+    cur.execute("UPDATE partei SET nationale_minderheit = true WHERE kuerzel = 'SSW'")
+
     # Änderungen speichern
     conn.commit()
 
