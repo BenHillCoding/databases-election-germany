@@ -24,8 +24,9 @@ def drop_constraints(cur):
 
 def recreate_constraints(cur):
     # Nach dem Laden neu erstellen
-    cur.execute("ALTER TABLE erststimme ADD COLUMN id SERIAL PRIMARY KEY;")
-    cur.execute("ALTER TABLE zweitstimme ADD COLUMN id SERIAL PRIMARY KEY;")
+    cur.execute("ALTER TABLE erststimme ADD CONSTRAINT erststimme_pkey PRIMARY KEY (id);")
+    cur.execute("ALTER TABLE zweitstimme ADD CONSTRAINT zweitstimme_pkey PRIMARY KEY (id);")
+    cur.execute("CREATE INDEX idx_zweitstimme_gueltig ON zweitstimme (gueltig);")
 
 def main():
     conn = db_connect()
@@ -110,7 +111,8 @@ def main():
         cur.copy_expert("COPY zweitstimme (wahlkreisergebnis_id, gueltig, partei_id, anzahl) FROM STDIN", zweit_buffer)
 
         # Constraints neu erstellen
-        # recreate_constraints(cur)
+        recreate_constraints(cur)
+        print("Constraints erstellt.")
 
     conn.commit()
     conn.close()

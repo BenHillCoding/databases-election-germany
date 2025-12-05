@@ -15,6 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy your application code
 COPY app ./app
 COPY python_scripts ./python_scripts
+COPY database_scripts ./database_scripts
 
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh

@@ -317,5 +317,3 @@ FROM mv_qualifying_parties_21 qp
 LEFT JOIN mv_final_seat_distribution_21 fsd ON qp.partei_id = fsd.partei_id
 GROUP BY qp.partei_id, qp.partei_name, qp.total_votes, qp.vote_share_percent
 ORDER BY total_seats_nationwide DESC;
-
-select * from mv_national_summary_21;
