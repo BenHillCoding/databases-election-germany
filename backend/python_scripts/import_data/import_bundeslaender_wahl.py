@@ -9,12 +9,14 @@ BUNDESLAND_LIST = [[1, "Schleswig-Holstein"], [2, "Hamburg"], [3, "Niedersachsen
 
 def db_connect():
     return psycopg2.connect(
-        dbname=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        host=os.getenv("DB_HOST"),
-        port=os.getenv("DB_PORT")
+        dbname=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv("POSTGRES_PASSWORD"),
+        host=os.getenv("POSTGRES_HOST", "db"),
+        port=os.getenv("POSTGRES_PORT", "5432")
     )
+
+
 
 # Fills bundesland and wahl table
 def main():

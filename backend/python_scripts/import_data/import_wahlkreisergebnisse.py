@@ -6,19 +6,20 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 
-CSV_PATH = "python_scripts/daten/kerg2_00413.csv"
+CSV_PATH = "/app/python_scripts/daten/kerg2_00413.csv"
 
 def db_connect():
     return psycopg2.connect(
-        dbname=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        host=os.getenv("DB_HOST"),
-        port=os.getenv("DB_PORT")
+        dbname=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv("POSTGRES_PASSWORD"),
+        host=os.getenv("POSTGRES_HOST", "db"),
+        port=os.getenv("POSTGRES_PORT", "5432")
     )
 
+
 def get_wahl_id(cur, datum):
-    cur.execute("SELECT nummer FROM wahl WHERE datum = %s", (datum,))
+    cur.execute("SELECT nummer FROM wahl WHERE datum = TO_DATE(%s, 'DD.MM.YYYY')", (datum,))
     row = cur.fetchone()
     return row[0] if row else None
 

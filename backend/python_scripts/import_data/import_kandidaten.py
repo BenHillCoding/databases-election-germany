@@ -5,26 +5,28 @@ from dotenv import load_dotenv, dotenv_values
 
 load_dotenv() 
 
+import os
 
-CSV_PATH_2025 = "python_scripts/daten/btw25_bewerb_utf8.csv"
-CSV_PATH_2021 = "python_scripts/daten/btw21_kandidaturen_utf8.csv"
+CSV_PATH_2025 = "/app/python_scripts/daten/btw25_bewerb_utf8.csv"
+CSV_PATH_2021 = "/app/python_scripts/daten/btw21_kandidaturen_utf8.csv"
 
 
 def db_connect():
     return psycopg2.connect(
-        dbname=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        host=os.getenv("DB_HOST"),
-        port=os.getenv("DB_PORT")
+        dbname=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv("POSTGRES_PASSWORD"),
+        host=os.getenv("POSTGRES_HOST", "db"),
+        port=os.getenv("POSTGRES_PORT", "5432")
     )
+
 
 # --- Lookups ---
 
 def get_wahl_nummer(cur, datum):
     cur.execute("""
         SELECT nummer FROM wahl
-        WHERE datum = %s
+        WHERE datum = TO_DATE(%s, 'DD.MM.YYYY')
         """, (datum,))
     row = cur.fetchone()
     return row[0] if row else None
@@ -118,7 +120,8 @@ def read_file(cur, file_path):
             geburtsjahr = int(row.get("Geburtsjahr"))
             kennzeichen = row.get("Kennzeichen")
             gebietsname = row.get("Gebietsname")  # long name of Bundesland
-            listenplatz = int(row.get("Listenplatz"))
+            listenplatz_str = row.get("Listenplatz")
+            listenplatz = int(listenplatz_str) if listenplatz_str and listenplatz_str.strip() else None
             wahlkreis_id = int(row.get("Gebietsnummer"))
             gruppen_kurz = row.get("GruppennameKurz")
 

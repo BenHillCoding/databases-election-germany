@@ -6,7 +6,7 @@ NEW_KUERZEL_LIST = [["GRÜNE/B 90", "GRÜNE"], ["DIE LINKE", "Die Linke"], ["Die
 NEW_GRUPPENNAME_LIST = []
 
 # Directory containing CSV files
-TARGET_DIR = "python_scripts/daten"
+TARGET_DIR = "backend/python_scripts/daten"
 
 def replace_in_csv(filepath, rowname, replacements):
     """Replace values in GruppennameKurz column of a CSV file."""

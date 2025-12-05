@@ -4,16 +4,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_CONFIG = {
-    "dbname": os.getenv("DB_NAME"),
-    "user": os.getenv("DB_USER"),
-    "password": os.getenv("DB_PASSWORD"),
-    "host": os.getenv("DB_HOST"),
-    "port": os.getenv("DB_PORT")
-}
-
 def db_connect():
-    return psycopg2.connect(**DB_CONFIG)
+    return psycopg2.connect(
+        dbname=os.getenv("POSTGRES_DB"),
+        user=os.getenv("POSTGRES_USER"),
+        password=os.getenv("POSTGRES_PASSWORD"),
+        host=os.getenv("POSTGRES_HOST", "db"),
+        port=os.getenv("POSTGRES_PORT", "5432")
+    )
+
 
 def drop_all_tables(cur):
     # Drop in reverse dependency order to avoid foreign key issues
