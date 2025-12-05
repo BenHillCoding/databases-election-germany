@@ -316,5 +316,5 @@ SELECT
   COALESCE(SUM(fsd.total_seats), 0) as total_seats_nationwide
 FROM mv_qualifying_parties_25 qp
 LEFT JOIN mv_final_seat_distribution_25 fsd ON qp.partei_id = fsd.partei_id
-GROUP BY qp.partei_id, qp.partei_name, qp.total_votes, qp.vote_share_percent
+GROUP BY qp.partei_id, qp.partei_name, qp.partei_kuerzel, qp.total_votes, qp.vote_share_percent
 ORDER BY total_seats_nationwide DESC;
